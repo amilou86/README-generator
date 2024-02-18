@@ -18,7 +18,7 @@ const questions = [{
 },
 {
     type: 'input',
-    name: 'projectName',
+    name: 'title',
     message: 'What is your project name?',
 
 },
@@ -32,6 +32,7 @@ const questions = [{
     type: 'input',
     name: 'name',
     message: 'What kind of license should your project have?',
+    options: ["Apache", "GNU", "MIT", "Boost", "Eclipse", "Mozilla"],
 
 },
 {
@@ -60,7 +61,7 @@ const questions = [{
 },
 ];
 
-//const {}
+
 
  // function to write README file
 function writeToFile(fileName, data) {
@@ -75,3 +76,4 @@ function init() {
 init();
 
 
+module.export = index.js
