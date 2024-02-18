@@ -36,6 +36,21 @@ ${data.descrition}
 [Contributions](#Contributors)
 [Tests](#Test)
 [Questions](#Questions)
+
+<div>
+<h2>Installation</h2>
+<p>${options.dependencies}</p>
+<h2>Usgae</h2>
+<p>${opt.usage}</p>
+<h2>Contributors</h2>
+<p>${options.contributors}</p>
+<h2>Tests</h2>
+<P>${options.test}
+<h2>Questions</h2>
+<p>${options.name}</p>
+<p>${options.email}</P>
+</div>
+
 ## Installation
 ${data.dependencies}
 ## Usage

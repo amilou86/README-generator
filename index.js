@@ -61,10 +61,6 @@ const questions = [{
 },
 ];
 
- // function to write README file
-function writeToFile(fileName, data) {
-}
-
 // function to initialize program
 function init() {
     inquirer.prompt(questions); //
@@ -73,5 +69,12 @@ function init() {
 // function call to initialize program
 init();
 
+ // function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile('README.md', 'README Generator', function (err) {
+        if (err) throw err;
+        console.log(saved);
+    });
+}
 
-module.export = index.js
+// module.export = index.js
