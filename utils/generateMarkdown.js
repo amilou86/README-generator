@@ -65,7 +65,7 @@ ${[data.name], [data.email]}
 <h2>Installation</h2>
 <p>${options.dependencies}</p>
 <h2>Usgae</h2>
-<p>${opt.usage}</p>
+<p>${options.usage}</p>
 <h2>Contributors</h2>
 <p>${options.contributors}</p>
 <h2>Tests</h2>
