@@ -24,13 +24,23 @@ function licenseBadge(license) {
   }
 };
 
-
-
-
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+${licenseBadge(data.license)}
+## Description
 
+## table of Contents //list of sections in the README with links to each
+
+## Installation
+
+## Usage
+
+## Contributions
+
+## Tests
+
+## Questions // github username & email address added here with link to profile
 `;
 }
 
