@@ -30,8 +30,12 @@ function generateMarkdown(data) {
 ${licenseBadge(data.license)}
 ## Description
 ${data.descrition}
-## table of Contents //list of sections in the README with links to each
-
+## table of Contents 
+[Installation](#Dependencies)
+[Usage](#Usage)
+[Contributions](#Contributors)
+[Tests](#Test)
+[Questions](#Questions)
 ## Installation
 ${data.dependencies}
 ## Usage
@@ -40,7 +44,7 @@ ${date.usage}
 ${data.contributors}
 ## Tests
 ${data.test}
-## Questions // github username & email address added here with link to profile
+## Questions 
 Please send any questions to;
 ${[data.name], [data.email]}
 `;
