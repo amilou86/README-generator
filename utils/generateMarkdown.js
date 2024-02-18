@@ -24,18 +24,42 @@ function licenseBadge(license) {
   }
 };
 
+
+
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  <h1> # ${data.title} </h1>
 ${licenseBadge(data.license)}
-## Description
+<div>
+<h2> ## Description </h2>
 ${data.descrition}
-## table of Contents 
+</div>
+
+<div>
+<h2> ## Table of Contents </h2>
 [Installation](#Dependencies)
 [Usage](#Usage)
 [Contributions](#Contributors)
 [Tests](#Test)
 [Questions](#Questions)
+</div>
+  
+<div>
+## Installation
+${data.dependencies}
+## Usage
+${date.usage}
+## Contributions
+${data.contributors}
+## Tests
+${data.test}
+## Questions 
+Please send any questions to;
+${[data.name], [data.email]}
+</div>
+
+// above or below?
 
 <div>
 <h2>Installation</h2>
@@ -51,17 +75,6 @@ ${data.descrition}
 <p>${options.email}</P>
 </div>
 
-## Installation
-${data.dependencies}
-## Usage
-${date.usage}
-## Contributions
-${data.contributors}
-## Tests
-${data.test}
-## Questions 
-Please send any questions to;
-${[data.name], [data.email]}
 `;
 }
 

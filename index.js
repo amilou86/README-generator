@@ -61,20 +61,24 @@ const questions = [{
 },
 ];
 
-// function to initialize program
-function init() {
-    inquirer.prompt(questions); //
-}
-
-// function call to initialize program
-init();
-
  // function to write README file
-function writeToFile(fileName, data) {
+ function writeToFile(fileName, data) {
     fs.writeFile('README.md', 'README Generator', function (err) {
         if (err) throw err;
         console.log(saved);
     });
 }
+
+WHERE DO I CALL generateMarkdown ();
+
+// function to initialize program
+function init() {
+    inquirer.prompt(questions); 
+}
+
+// function call to initialize program
+init();
+
+
 
 // module.export = index.js
